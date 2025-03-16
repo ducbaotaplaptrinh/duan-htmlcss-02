@@ -248,6 +248,8 @@ nav a:hover::after {
 /* -----------course--------------- */
 .course {
     padding: 200px 0;
+}
+.course .main-content {
     position: relative;
 }
 .course .main:nth-of-type(2) {
@@ -263,6 +265,11 @@ nav a:hover::after {
 }
 .course .dislay {
     display: flex;
+}
+/* introduce ---------------------*/
+.introduce {
+    display: flex;
+    justify-content: space-between;
 }
 .introduce .heading {
     color: #171100;
@@ -281,40 +288,29 @@ nav a:hover::after {
     margin: 16px 0 55px;
 }
 
-/* ------------chuyển tiếp ----------------- */
-.transfer {
-    position: absolute;
-    right: 0;
-    top: 242px;
+.introduce .transfer {
     display: flex;
-    width: 98px;
     justify-content: space-between;
+    width: 9.8rem;
+    height: 4rem;
 }
 .transfer button {
-    background: #fff;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    color: var(--primary-color);
+}
+.transfer button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
     cursor: pointer;
-}
-.my-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border: 3px #ffc107 solid;
-    border-radius: 50%;
-    margin: -6px;
-}
-.my-icon-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: #ffc107;
-    border-radius: 50%;
-    margin: -6px;
 }
 
 .dislay .main .img {
