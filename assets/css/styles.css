@@ -15,6 +15,20 @@ body {
     font-family: "Poppins", sans-serif;
 }
 /* common */
+/* gioi han dong  */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+.break-all {
+    word-break: break-all;
+}
+
 .btn {
     display: inline-block;
     text-align: center;
@@ -247,29 +261,26 @@ nav a:hover::after {
 }
 /* -----------course--------------- */
 .course {
-    padding: 200px 0;
+    padding: 135px 0;
+    margin-top: 65px;
 }
-.course .main-content {
-    position: relative;
-}
-.course .main:nth-of-type(2) {
-    margin: 0 30px;
-}
-.course .main {
+
+.course .dislay-main {
     border-radius: 12px;
     background: #fff;
     border: 1px solid #e2dfda;
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
-    min-width: 370px;
-    height: 466px;
 }
 .course .dislay {
     display: flex;
+    gap: 27px;
 }
 /* introduce ---------------------*/
 .introduce {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
 }
 .introduce .heading {
     color: #171100;
@@ -280,25 +291,21 @@ nav a:hover::after {
 }
 .introduce .desc {
     display: inline-block;
-    width: 458px;
     color: #5f5b53;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.6; /* 166.667% */
-    margin: 16px 0 55px;
+    margin-top: 16px;
 }
 
 .introduce .transfer {
     display: flex;
-    justify-content: space-between;
-    width: 9.8rem;
-    height: 4rem;
+    gap: 18px;
 }
 .transfer button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 42px;
     background: transparent;
     border: 1px solid var(--primary-color);
     width: 40px;
@@ -312,11 +319,11 @@ nav a:hover::after {
     color: #fff;
     cursor: pointer;
 }
-
-.dislay .main .img {
+.dislay .img {
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
-    padding-bottom: 16px;
+    margin: -1px;
+    width: calc(100% + 2px);
 }
 .review-3 {
     display: flex;
@@ -348,7 +355,7 @@ nav a:hover::after {
     line-height: 1.8; /* 185.714% */
 }
 .dislay .review {
-    padding: 0 22px;
+    padding: 16px 22px 22px;
 }
 .review .buy {
     display: flex;
@@ -621,7 +628,7 @@ nav a:hover::after {
     width: 85px;
     height: 24px;
 }
-.main-content .desc {
+.footer .main-content .desc {
     color: #bfbcb2;
     font-size: 1.4rem;
     font-weight: 400;
