@@ -391,11 +391,38 @@ nav a:hover::after {
     padding: 96px 0;
     margin-top: 65px;
 }
-.main-content .feedback-item-1 {
+.feedback .feedback-list {
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
-.feedback-main .avt {
+.main-content .feedback-item {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    /* di chuyen giua cac item 
+    transform: translate(-100%);
+    transition: all ease 0.5s; */
+}
+.dot-icon {
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+.dot-icon .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #634700;
+}
+.dot-icon .dot.active {
+    background: rgba(255, 185, 0, 1);
+    border: none;
+}
+
+.feedback-list .avt {
     width: 72px;
     height: 72px;
     object-fit: cover;
